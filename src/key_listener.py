@@ -390,7 +390,6 @@ class KeyListener:
         self.key_chord = KeyChord(keys)
 
     def on_input_event(self, event):
-        print(f"KeyListener received event: {event}")
         """Handle input events and trigger callbacks if the key chord becomes active or inactive."""
         if not self.key_chord or not self.active_backend:
             return
@@ -525,7 +524,6 @@ class EvdevBackend(InputBackend):
         self.devices = []
 
     def _handle_input_event(self, event):
-        print(f"EvdevBackend received event: {event}")
         """Process a single input event from the listener thread."""
         key_code, event_type = self._translate_key_event(event)
         if key_code is not None and event_type is not None:
