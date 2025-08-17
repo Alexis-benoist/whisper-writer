@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT License" }
 authors = [
-  { name = "Alexis", email = "alexis@example.com" },
+  { name = "Sav Bell", email = "sav@savbell.com" },
 ]
 
 # Dépendances de premier niveau (directement utilisées par le projet)
